@@ -5,8 +5,123 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-  html{
-    font-family: 'Raleway',sans-serif;
+@layer base {
+  :root{
+    /* Elegant professional palette with a personal warm touch */
+    --bg-1: #0b1520; /* deep midnight navy */
+    --bg-2: #0f2a3a; /* dark slate */
+    --bg-3: #123b4d; /* teal-ish slate */
+    --bg-4: #153845; /* slightly warmer deep tone */
+
+    /* Cards and glass */
+    --card: rgba(255,255,255,0.03);
+
+    /* Warm personal accent (soft gold/copper) and a cooler secondary */
+    --accent: #cfa16b; /* warm gold */
+    --accent-2: #6fb4b8; /* muted teal */
+
+    /* Muted text and subtle highlights */
+    --muted: #b9c7d2; /* pale steel */
+    --muted-2: #8fa3ae; /* medium muted */
+
+    /* Social brand overrides (semantic classes will use these) */
+    --social-link-bg: rgba(255,255,255,0.06);
   }
+
+  /* Make the page height flexible: minimum is one viewport height, grows with content */
+  html, body, #root{
+    min-height: 100vh;
+    /* smooth blend from top to bottom; stretches as content grows */
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(18,56,77,0.12), transparent 10%),
+        linear-gradient(180deg, var(--bg-1) 0%, var(--bg-4) 100%);
+  color: #e9f1f4;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+  }
+
+  html{
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .glass {
+    background: linear-gradient(135deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.03);
+  }
+
+  .accent-btn{
+    background: linear-gradient(90deg, rgba(207,161,107,0.95), rgba(111,180,184,0.9));
+    color: #081018; /* dark text for contrast */
+    box-shadow: 0 6px 18px rgba(15,30,40,0.45);
+  }
+
+  /* Semantic accent gradient class for use in places like logo */
+  .accent-gradient {
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    color: #081018;
+  }
+
+  /* Social icon semantic classes (keeps components unchanged but replaces color tokens) */
+  .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 9999px;
+    color: white;
+    box-shadow: 0 6px 14px rgba(2,6,23,0.45);
+    border: 1px solid rgba(255,255,255,0.03);
+  }
+
+  .social-link--linkedin { background: linear-gradient(180deg, #0f4f6a, #0b3b52); }
+  .social-link--instagram { background: linear-gradient(45deg, #e37a8c, #f5c26e, #7a5bdc); }
+  .social-link--x { background: linear-gradient(180deg, #1e86a8, #11627c); }
+  .social-link--youtube { background: linear-gradient(180deg, #d93025, #9b1f1a); }
+
+  .muted { color: var(--muted); }
+
+  /* Thought bubble for vertical slider (kept from earlier design) */
+  .thought-bubble {
+    position: relative;
+    background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.06);
+    padding: 16px 18px;
+    border-radius: 20px;
+    max-width: 320px;
+    color: #eaf6ff;
+  }
+
+  .thought-bubble::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.06);
+    transform: rotate(45deg);
+    left: 30px;
+    bottom: -6px; /* small overlap */
+  }
+
+  .thought-tail {
+    position: absolute;
+    left: 38px;
+    bottom: -22px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .thought-tail span{
+    width: 8px;
+    height: 8px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.06);
+    display: block;
+  }
+
 }

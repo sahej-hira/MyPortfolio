@@ -1,47 +1,43 @@
 import React from "react";
-import myImage from "../assets/heroImage.jpg";
-import { FaMagnifyingGlassArrowRight } from "react-icons/fa6";
+import VerticalTextSlider from "./VerticalTextSlider";
+
 
 const Home = () => {
   return (
-    <div
-      id="home"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-pink-300 "
-    >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-centr justify-center h-full px-4">
-        <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            A learner, developer, and problem solver
-          </h2>
-          <div className="flex flex-col md:flex-row items-center justify-center ">
-            <p className="text-white py-4 max-w-md">
-              {" "}
-              I am passionate about crafting innovative and user-friendly
-              digital experiences. With a strong foundation in Python, Java and
-              MERN. My goal is to leverage my skills to create impactful
-              solutions that solve real-world problems and make a positive
-              difference.
-            </p>
-            <div className="mx-auto h-40 w-40 rounded-full overflow-hidden">
-              <img
-                src={myImage}
-                alt="my profile"
-                className="h-full w-full object-cover"
-              />
-            </div>
-          </div>
+    <section id="home" className="min-h-screen flex items-center pt-20">
+      <div className="max-w-5xl mx-auto w-full px-6 py-20 flex flex-col md:flex-row items-center gap-12">
+        <div className="flex-1">
+          <div className="mb-4 text-sm uppercase text-blue-900 font-medium tracking-widest">Sahej Hira </div>
+          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight flex items-baseline">
+            <span className="mr-3">The</span>
+            <VerticalTextSlider
+              items={["poet", "writer", "painter", "founder", "full stack dev", "survivor", "gamer", "explorer", "music lover", "traveller", "blogger", "vlogger", "photographer", "designer", "innovator", "visionary", "coder", "artist", "storyteller","adventurer", "strategist", "leader", "team player", "communicator", "problem solver", "ideator", "collaborator", "researcher", "influencer", "mentor", "coach", "volunteer", "activist"]}
+              interval={2200}
+              inline={true}
+              className="text-4xl md:text-6xl font-extrabold"
+            />
+          </h1>
+          <p className="mt-6 text-lg muted max-w-xl">
+            I don't like to be defined only by my profession. There is more to us as humans — I'm a multifaceted individual with a passion for creativity and self-expression.
+          </p>
 
-          <div>
-            <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-pink-400 via-pink-400 to-pink-300 cursor-pointer">
-              Explore
-              <span className="group-hover:cursor-zoom-in duration-200">
-                <FaMagnifyingGlassArrowRight size={25} className="ml-1" />
-              </span>
-            </button>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <a href="/portfolio" className="px-6 py-3 rounded-md accent-btn font-semibold shadow-md">View projects</a>
+            <a href="/contact" className="px-6 py-3 rounded-md border" style={{borderColor: 'rgba(255,255,255,0.04)', color: 'var(--muted)'}}>Get in touch</a>
           </div>
         </div>
+
+        <div className="flex-1 flex flex-col items-center md:items-end w-full relative">
+          <div className="w-72 h-72 rounded-2xl glass flex flex-col items-center justify-center overflow-visible relative">
+            {/* profile image from public/sahej.jpg */}
+            <div className="w-72 h-72 rounded-2xl overflow-hidden">
+              <img src={process.env.PUBLIC_URL + '/sahej.jpg'} alt="Sahej Hira" loading="lazy" className="w-full h-full object-cover" />
+            </div>
+
+            </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
