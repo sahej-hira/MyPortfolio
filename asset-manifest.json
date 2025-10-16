@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Portfolio2025/static/css/main.eac21a05.css",
+    "main.js": "/Portfolio2025/static/js/main.89c2ed03.js",
+    "static/media/AmbulanceDetection.png": "/Portfolio2025/static/media/AmbulanceDetection.ddd8b1a31ebed847f2fb.png",
+    "static/media/VFierce.png": "/Portfolio2025/static/media/VFierce.57d24f89585d04f2c521.png",
+    "static/media/speakub_image.png": "/Portfolio2025/static/media/speakub_image.036c69a6aef81ccd64c6.png",
+    "static/media/QuestionBox.png": "/Portfolio2025/static/media/QuestionBox.06fec1dcaf9af5351152.png",
+    "static/media/RandomQuoteGenerator.png": "/Portfolio2025/static/media/RandomQuoteGenerator.5b4ff70e8ba24eee22bb.png",
+    "index.html": "/Portfolio2025/index.html",
+    "main.eac21a05.css.map": "/Portfolio2025/static/css/main.eac21a05.css.map",
+    "main.89c2ed03.js.map": "/Portfolio2025/static/js/main.89c2ed03.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eac21a05.css",
+    "static/js/main.89c2ed03.js"
+  ]
+}
