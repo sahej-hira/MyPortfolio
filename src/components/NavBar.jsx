@@ -9,8 +9,8 @@ const NavBar = () => {
     { id: 1, name: "Home", path: "/" },
     { id: 2, name: "About", path: "/about" },
     { id: 3, name: "Projects", path: "/portfolio" },
-    { id: 4, name: "Experience",path: "/experience" },
-    { id: 5, name: "Contact",path:  "/contact" },
+    { id: 4, name: "Experience", path: "/experience" },
+    { id: 5, name: "Blog", path: "/blog" },
   ];
 
   return (

@@ -1,0 +1,26 @@
+{
+  "short_name": "Sahej Portfolio",
+  "name": "Sahej Hira - Full Stack Developer Portfolio",
+  "description": "Portfolio of Sahej Hira - Full Stack Developer, Poet, and Founder specializing in React, JavaScript, Python, ML/AI, and cybersecurity",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "sahej.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "categories": ["portfolio", "developer", "technology"],
+  "lang": "en-US",
+  "scope": "/"
+}

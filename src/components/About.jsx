@@ -70,19 +70,20 @@ const timeline = [
 
 const About = () => {
   return (
-    <section className="py-40">
+    <section className="py-40" aria-labelledby="about-heading">
       <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-4">About</h2>
-        <p className="muted text-center mb-8">A short, recent-first timeline of my life: how I learned, struggled, and built the work I do today.</p>
+        <h2 id="about-heading" className="text-4xl font-bold text-center mb-4">About Sahej Hira</h2>
+        <p className="muted text-center mb-8">A short, recent-first timeline of my life: how I learned, struggled, and built the work I do today as a full-stack developer, poet, and founder.</p>
 
         <div className="text-center mb-8">
-          <p className="muted mb-3">Quick links — a short version of About</p>
+          <p className="muted mb-3">Quick links — explore my creative work and startup</p>
           <div className="inline-flex gap-3 flex-wrap justify-center">
             <a
               href="https://medium.com/@sahej.k.hira"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 rounded-md accent-btn font-semibold text-sm"
+              aria-label="Read Sahej Hira's poetry blogs on Medium"
             >
               Poetry blogs
             </a>
@@ -92,6 +93,7 @@ const About = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 rounded-md accent-btn font-semibold text-sm"
+              aria-label="Visit Speakub - Sahej Hira's communication platform startup"
             >
               Startup
             </a>
@@ -101,6 +103,7 @@ const About = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 rounded-md accent-btn font-semibold text-sm"
+              aria-label="Watch Sahej Hira's poetry vlogs on Instagram"
             >
               Poetry vlogs
             </a>
