@@ -49,8 +49,6 @@ const StarsBackground = ({ numStars = 300 }) => {
     const stars = []
     for (let i = 0; i < numStars; i++) stars.push(new Star())
 
-    let isPaused = false
-
     const animate = () => {
   // trail fade for gentle motion blur, use a bluish translucent so page stays blue
   // increased alpha so trails decay faster and don't form long lines
