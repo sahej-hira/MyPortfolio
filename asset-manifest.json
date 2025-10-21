@@ -1,18 +1,24 @@
 {
   "files": {
     "main.css": "/MyPortfolio/static/css/main.32641f90.css",
-    "main.js": "/MyPortfolio/static/js/main.85ce3121.js",
+    "main.js": "/MyPortfolio/static/js/main.ed222024.js",
     "static/media/AmbulanceDetection.png": "/MyPortfolio/static/media/AmbulanceDetection.ddd8b1a31ebed847f2fb.png",
     "static/media/VFierce.png": "/MyPortfolio/static/media/VFierce.57d24f89585d04f2c521.png",
     "static/media/speakub_image.png": "/MyPortfolio/static/media/speakub_image.036c69a6aef81ccd64c6.png",
+    "static/media/ImageClassifier.png": "/MyPortfolio/static/media/ImageClassifier.8cc4f9361196337ab3c9.png",
+    "static/media/DataBreach.png": "/MyPortfolio/static/media/DataBreach.83d729a4d5786a013a5f.png",
+    "static/media/NetworkVulnerability.png": "/MyPortfolio/static/media/NetworkVulnerability.9cb28e0a1b4d1f7814e5.png",
     "static/media/QuestionBox.png": "/MyPortfolio/static/media/QuestionBox.06fec1dcaf9af5351152.png",
+    "static/media/movieg.png": "/MyPortfolio/static/media/movieg.503155fc6aab61cb7efa.png",
     "static/media/RandomQuoteGenerator.png": "/MyPortfolio/static/media/RandomQuoteGenerator.5b4ff70e8ba24eee22bb.png",
+    "static/media/CreditCard.png": "/MyPortfolio/static/media/CreditCard.35ee660f1a0ce59ebdbf.png",
+    "static/media/SMS.png": "/MyPortfolio/static/media/SMS.b3cd1935b32e65919f84.png",
     "index.html": "/MyPortfolio/index.html",
     "main.32641f90.css.map": "/MyPortfolio/static/css/main.32641f90.css.map",
-    "main.85ce3121.js.map": "/MyPortfolio/static/js/main.85ce3121.js.map"
+    "main.ed222024.js.map": "/MyPortfolio/static/js/main.ed222024.js.map"
   },
   "entrypoints": [
     "static/css/main.32641f90.css",
-    "static/js/main.85ce3121.js"
+    "static/js/main.ed222024.js"
   ]
 }
